@@ -72,10 +72,40 @@ This project uses data from the 2024 Stack Overflow Developer Survey and the Bur
 - [May 2023 State Data - Occupational Employment and Wage Statistics](https://www.bls.gov/oes/tables.htm)
 
 ### Data Attributes
-Placeholder text.
+
+#### 2024 Stack Overflow Annual Developer Survey Data Attributes
+
+| **Attribute**      | **Description**                                                    | **Example Values**                           |
+|--------------------|--------------------------------------------------------------------|----------------------------------------------|
+| **RespondId**       | Unique identifier for each respondent                             | 390, 399, 417                                |
+| **Age Range**       | Age group of the respondent                                        | 25-34, 45-54, 18-24                          |
+| **RemoteWork**      | Work arrangement of the respondent                                 | Remote, In-person, Hybrid                    |
+| **EdLevel**         | Highest education level attained by the respondent                 | Bachelors, Masters, Some college             |
+| **YearsCode**       | Number of years the respondent has been coding or programming      | 7, 38, 21                                    |
+| **DevType**         | Type of developer or role the respondent identifies with           | Full-stack developer, Back-end developer     |
+| **OrgSize**         | Size of the organization the respondent works for                  | 1,000 to 4,999, 10 to 19                     |
+| **Country**         | Country of residence or work of the respondent                     | United States of America, Brazil, Ukraine    |
+| **ICorPM**          | Role designation: individual contributor or people manager         | Individual contributor, People manager       |
+| **WorkExp**         | Number of years the respondent has been working professionally     | 8, 30, 17                                    |
+| **Industry**        | Industry in which the respondent is employed                       | Software Development, Healthcare, Government |
+| **TotalComp**       | Total yearly compensation, including salary, bonuses, etc. (USD)   | \$110,000, \$195,000, \$170,000              |
+| **Language_Various**| Whether the respondent has experience with various programming languages | Yes, No                                  |
+| **Database_Various**| Whether the respondent has experience with various databases       | Yes, No                                      |
+
+---
+
+#### May 2023 BLS Occupational Employment and Wage Statistics Data Attributes
+
+| **Attribute**      | **Description**                                                    | **Example Values**                           |
+|--------------------|--------------------------------------------------------------------|----------------------------------------------|
+| **State**           | The U.S. state where the job or occupation is located              | Alabama, Alaska, Arizona                     |
+| **Title**           | The job title or role associated with the given statistics         | Software Developers, Web Developers, etc.    |
+| **Size**            | Number of individuals employed in the specified occupation within the state | 1860, 17130, 304390                  |
+| **AvgSalary**       | Average (mean) salary for the given occupation in the state (USD)  | \$97,020, \$145,420, \$110,630               |
+
 
 ### Limitations
-This project focuses only on developer salary data from 2023 and 2024. Historical data or other tech roles are not covered, which may limit the scope of the analysis.
+This project focuses exclusively on developer salary data from 2023 and 2024, limiting the analysis to those two years. It does not include historical salary trends from earlier years, nor does it cover other tech-related roles outside of developer positions. These limitations may affect the broader applicability of the results.
 
 ## Data Preparation
 
