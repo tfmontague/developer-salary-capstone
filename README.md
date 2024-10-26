@@ -128,16 +128,21 @@ Step-by-step coding and details of the data exploration content are located in t
 
 ### Descriptive Statistics
 
-![Stack Overflow Summary Statistics](image.png)
+Stack Overflow Summary Statistics
+![Stack Overflow Summary Statistics](images/image.png)
 
-![Stack Overflow Categorical Data Counts](devSalcat.png)
+Stack Overflow Categorical Data Counts
+![Stack Overflow Categorical Data Counts](images/devSalcat.png)
 
-![BLS Summary Statistics](blsstats.png)
+BLS Summary Statistics
+![BLS Summary Statistics](images/blsstats.png)
 
-![BLS Average Salary by State](blsavgsal.png)
+BLS Average Salary by State
+![BLS Average Salary by State](images/blsavgsal.png)
 
 ### Visual Analysis
-Placeholder text.
+Average Salary Distribution
+
 
 ### Key Insights from EDA
 Placeholder text.
