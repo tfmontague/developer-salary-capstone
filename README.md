@@ -109,13 +109,21 @@ This project focuses exclusively on developer salary data from 2023 and 2024, li
 
 ## Data Preparation
 
-### Data Cleaning
-Placeholder text.
+#### Data Cleaning
+The [2024 Stack Overflow Annual Developer Survey](https://survey.stackoverflow.co/) data was cleaned by handling missing values through removal, deleting outliers, and ensuring consistency in categorical and numerical variables. To clean the [May 2023 State Data - Occupational Employment and Wage Statistics](https://www.bls.gov/oes/tables.htm), unrelated job titles were deleted, and missing values were addressed by inputting mean values.
 
-### Transformation and Feature Engineering
-Placeholder text.
+#### Transformation and Feature Engineering
+The [2024 Stack Overflow Annual Developer Survey](https://survey.stackoverflow.co/) transformation process involved converting categorical variables into numerical formats using one-hot encoding or label encoding (e.g., for attributes like DevType or RemoteWork). Numerical variables like YearsCode and WorkExp were scaled to ensure uniformity across the dataset. Additionally, new features were engineered, such as combining YearsCode and WorkExp into broader experience categories or creating interaction terms between EdLevel and DevType to capture potential relationships between education and role types. These steps enhanced the predictive power of the model.
+
+The transformation process for the [May 2023 State Data - Occupational Employment and Wage Statistics](https://www.bls.gov/oes/tables.htm) data involved converting categorical variables, such as RemoteWork and DevType, into numerical formats using techniques like one-hot encoding. Continuous variables like YearsCode and WorkExp were normalized to ensure consistent scaling. New features were engineered by creating interaction terms between relevant variables (e.g., combining EdLevel and WorkExp to reflect how education and experience jointly impact salary). Additionally, binary columns were added for programming language and database experiences.
+
+#### Transformed Files
+- [2024 Developer Survey Data](https://github.com/tfmontague/developer-salary-capstone/blob/main/data/cleaned/Transformed_Developer_Survey_Data.csv): The Developer Survey data serves as the primary dataset for building and training the salary estimator model. This dataset includes detailed information on job titles, coding experience, work experience, and other demographic factors relevant to developer compensation. The data is used to train the machine learning model for salary prediction, and it also feeds directly into the Shiny app, allowing users to interactively estimate salaries based on selected inputs such as job title, coding experience, database experience, and years of professional experience.
+- [2023 Bureau of Labor Statistics (BLS) Data](https://github.com/tfmontague/developer-salary-capstone/blob/main/data/cleaned/Transformed_bls2023_dl.csv): The BLS data provides geographic insights into average salaries by state across the United States. This dataset is integrated into the Shiny app’s dynamic dashboard to visualize state-level average salaries, offering a comprehensive geographical context to the salary estimator. By leveraging the BLS data, the dashboard enhances the model's predictions with real-world regional salary benchmarks, enabling users to compare estimated salaries with state averages across different locations.
 
 ## Data Exploration
+The Data Exploration deliverable in the salary estimator project, conducted in Jupyter Notebook, provides a comprehensive initial analysis of the dataset, encompassing descriptive statistics, visual analysis, and key insights from exploratory data analysis (EDA). This deliverable includes summarizing key salary-related measures such as average compensation, distribution of salaries across job roles, experience levels, and demographic factors. Through Jupyter Notebook, we use visualizations and statistical summaries to identify patterns, trends, and outliers that may influence salary disparities, enabling a deeper understanding of the spread and central tendencies within the developer salary data. This foundational analysis informs feature selection, highlights relationships among variables, and guides the modeling approach necessary to build an accurate salary prediction tool.
+
 
 ### Descriptive Statistics
 Placeholder text.
