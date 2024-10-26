@@ -124,9 +124,17 @@ The transformation process for the [May 2023 State Data - Occupational Employmen
 ## Data Exploration
 The Data Exploration deliverable in the salary estimator project, conducted in Jupyter Notebook, provides a comprehensive initial analysis of the dataset, encompassing descriptive statistics, visual analysis, and key insights from exploratory data analysis (EDA). This deliverable includes summarizing key salary-related measures such as average compensation, distribution of salaries across job roles, experience levels, and demographic factors. Through Jupyter Notebook, we use visualizations and statistical summaries to identify patterns, trends, and outliers that may influence salary disparities, enabling a deeper understanding of the spread and central tendencies within the developer salary data. This foundational analysis informs feature selection, highlights relationships among variables, and guides the modeling approach necessary to build an accurate salary prediction tool.
 
+Step-by-step coding and details of the data exploration content are located in this [Developer Salary Estimator Data Exploration](https://github.com/tfmontague/developer-salary-capstone/blob/main/data_exploration.ipynb) Jupyter Notebook. High-level findings from this analysis are depicted below.
 
 ### Descriptive Statistics
-Placeholder text.
+
+![Stack Overflow Summary Statistics](image.png)
+
+![Stack Overflow Categorical Data Counts](devSalcat.png)
+
+![BLS Summary Statistics](blsstats.png)
+
+![BLS Average Salary by State](blsavgsal.png)
 
 ### Visual Analysis
 Placeholder text.
