@@ -144,8 +144,24 @@ Step-by-step coding and details of the data exploration content are located in t
 ![BLS Average Salary by State](images/blsavgsal.png)
 
 ### Visual Analysis
-Average Salary Distribution
 
+#### Developer Survery Salary Distribution
+![Dev Salary Dist](images/devsaldist.png)
+
+#### Developer Work Experience Distribution
+![Dev Work Exp](images/workexpdist.png)
+
+#### Years of Coding Experience Distribution
+![Code Exp](images/codeexp.png)
+
+#### Company Size Distribution
+![Company Size](images/companysize.png)
+
+#### State Salary Averages Distribution
+![State Avg Dist](images/stateavgdist.png)
+
+#### Salary Averages by State
+![State Avg Map](images/stateavgmap.png)
 
 ### Key Insights from EDA
 Placeholder text.
