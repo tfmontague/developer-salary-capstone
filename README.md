@@ -61,7 +61,7 @@ The project follows a standard data analytics approach with these phases:
     - Limitations
     - Future Work
 
-![Project Phases](./project_phases.png)
+![Project Phases](images/project_phases.png)
 
 ## Data Collection
 
@@ -73,35 +73,44 @@ This project uses data from the 2024 Stack Overflow Developer Survey and the Bur
 
 ### Data Attributes
 
-#### 2024 Stack Overflow Annual Developer Survey Data Attributes
+#### 2024 Stack Overflow Annual Developer Survey Data Description & Attributes
 
-| **Attribute**      | **Description**                                                    | **Example Values**                           |
-|--------------------|--------------------------------------------------------------------|----------------------------------------------|
-| **RespondId**       | Unique identifier for each respondent                             | 390, 399, 417                                |
-| **Age Range**       | Age group of the respondent                                        | 25-34, 45-54, 18-24                          |
-| **RemoteWork**      | Work arrangement of the respondent                                 | Remote, In-person, Hybrid                    |
-| **EdLevel**         | Highest education level attained by the respondent                 | Bachelors, Masters, Some college             |
-| **YearsCode**       | Number of years the respondent has been coding or programming      | 7, 38, 21                                    |
-| **DevType**         | Type of developer or role the respondent identifies with           | Full-stack developer, Back-end developer     |
-| **OrgSize**         | Size of the organization the respondent works for                  | 1,000 to 4,999, 10 to 19                     |
-| **Country**         | Country of residence or work of the respondent                     | United States of America, Brazil, Ukraine    |
-| **ICorPM**          | Role designation: individual contributor or people manager         | Individual contributor, People manager       |
-| **WorkExp**         | Number of years the respondent has been working professionally     | 8, 30, 17                                    |
-| **Industry**        | Industry in which the respondent is employed                       | Software Development, Healthcare, Government |
-| **TotalComp**       | Total yearly compensation, including salary, bonuses, etc. (USD)   | \$110,000, \$195,000, \$170,000              |
-| **Language_Various**| Whether the respondent has experience with various programming languages | Yes, No                                  |
-| **Database_Various**| Whether the respondent has experience with various databases       | Yes, No                                      |
+The 2024 Stack Overflow Developer Survey dataset includes approximately 8,500 records and 97 columns that capture information on developers’ demographics, roles, work environments, and salaries. The purpose of this dataset is to understand salary trends and the factors influencing compensation across various developer roles.
+
+Below is the data attribute dictionary that outlines the key variables within our dataset:
+
+| Column Name         | Description                                                                                           | Data Type | Example Value    |
+|---------------------|-------------------------------------------------------------------------------------------------------|-----------|------------------|
+| RespondId           | Unique identifier for each respondent                                                                 | Integer   | 390              |
+| Age Range           | Age group of the respondent                                                                           | Integer   | 25-34            |
+| RemoteWork          | Work arrangement of the respondent (e.g., remote, in-person, hybrid)                                  | String    | Remote           |
+| EdLevel             | Highest education level attained by the respondent                                                    | String    | Bachelors        |
+| YearsCode           | Number of years the respondent has been coding or programming                                         | Integer   | 7                |
+| DevType             | Type of developer or role the respondent identifies with                                              | String    | Full-stack       |
+| OrgSize             | Size of the organization the respondent works for                                                     | Integer   | 1000             |
+| Country             | Country of residence or work of the respondent                                                        | String    | United States    |
+| ICorPM              | Role designation specifying if the respondent is an individual contributor or a people manager        | String    | Individual contributor |
+| WorkExp             | Number of years the respondent has been working professionally                                        | Integer   | 8                |
+| Industry            | Industry in which the respondent is employed                                                          | String    | Software Development |
+| TotalComp           | Total yearly compensation, including salary, bonuses, etc. (formatted in USD)                         | Float     | 110000           |
+| Language_Various      | Binary column indicating whether the respondent has worked with various programming languages (Yes/No) | String    | Yes              |
+| Database_Various      | Binary column indicating whether the respondent has worked with various databases (Yes/No) | String    | Yes              |
+
 
 ---
 
-#### May 2023 BLS Occupational Employment and Wage Statistics Data Attributes
+#### May 2023 BLS Occupational Employment and Wage Statistics Data Description & Attributes
 
-| **Attribute**      | **Description**                                                    | **Example Values**                           |
-|--------------------|--------------------------------------------------------------------|----------------------------------------------|
-| **State**           | The U.S. state where the job or occupation is located              | Alabama, Alaska, Arizona                     |
-| **Title**           | The job title or role associated with the given statistics         | Software Developers, Web Developers, etc.    |
-| **Size**            | Number of individuals employed in the specified occupation within the state | 1860, 17130, 304390                  |
-| **AvgSalary**       | Average (mean) salary for the given occupation in the state (USD)  | \$97,020, \$145,420, \$110,630               |
+ The 2023 BLS dataset includes information about wages and employment statistics across different states and industries within the United States, with 258 records and 4 columns. The dataset is designed to provide insights into salary average salaries by state, and other relevant workforce demographics.
+
+Below is the data attribute dictionary that outlines the key variables within our dataset:
+
+| Column Name         | Description                                                                                       | Data Type | Example Value |
+|---------------------|---------------------------------------------------------------------------------------------------|-----------|---------------|
+| State               | Name of the U.S. state or territory                                                               | String    | California    |
+| AvgSalary           | Average salary of employees in the state                                                          | Float     | 97583.49      |
+| Size                | Number of employees in the dataset for each state or job category                                 | Integer   | 8890          |
+| Occupation          | Job title or occupation category                                                                  | String    | Software Engineer |
 
 
 ### Limitations
