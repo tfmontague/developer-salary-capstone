@@ -172,17 +172,26 @@ Step-by-step coding and details of the data exploration content are located in t
 #### Salary Averages by State
 ![State Avg Map](images/stateavgmap.png)
 
-### Key Insights from EDA
-The following insights highlight common patterns in experience levels, company sizes, salary distributions, and regional differences in developer compensation, providing valuable context for understanding workforce demographics and salary trends in the tech industry.
+#### Feature Relationships - Pairplots and Coeffecient Matrix of Numerical Features
+![Feature Pairplots](images/pairplots.png)
+![Correlation Matrix](images/correlationmatrix.png)
 
-| Key Insight                       | Description                                                                                                                                                                                                                                                                                                    |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Years of Coding Experience        | The distribution of coding experience is skewed towards the lower end, with most respondents having less than 20 years of experience. There is a sharp drop in frequency beyond 20 years, indicating that the majority of developers in the dataset are relatively early in their careers.                       |
-| Company Size Distribution         | Company size varies widely among respondents. The most common company sizes are small to medium, with 0–50 employees (26.3%) and 251–1000 employees (25.8%), indicating that a significant portion of developers work in smaller organizations, though a notable portion also work in larger companies.        |
-| Salary Distribution               | The developer salary distribution is centered around $150,000 USD, with a significant peak at this value. This could suggest that a large number of respondents report similar compensation levels, likely influenced by common developer salary benchmarks or responses clustered around high-demand roles.       |
-| Annual State Wage Distribution    | The distribution of annual wages in the Bureau of Labor Statistics (BLS) data shows a bell curve centered around $100,000 USD, suggesting that most developers across states earn within a predictable mid-range salary.                                                                                         |
-| Average Salary by State           | The heatmap of average salaries by U.S. state reveals some regional differences, with states like California, Washington, and New York showing higher average developer salaries, possibly reflecting regional demand and cost-of-living differences.                                                         |
-| Years of Work Experience          | There is a high concentration of developers with less than 5 years of professional experience, with numbers gradually decreasing as experience increases. This trend reflects the industry's growth and the influx of new developers, as well as potential career shifts in tech.                               |
+#### Outlier Analysis
+![Outliers](images/outliers.png)
+
+### Key Insights from EDA
+The following insights highlight key trends and relationships in experience levels, company sizes, salary distributions, and feature interactions that provide valuable context for understanding developer salary dynamics.
+
+| Key Insight                           | Description                                                                                                                                                                                                                   |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Years of Coding Experience**        | Coding experience distribution is skewed towards the lower end, with most respondents having fewer than 20 years of experience. The sharp drop beyond 20 years suggests the majority of developers in the dataset are early in their careers. |
+| **Company Size Distribution**         | Company sizes vary among respondents, with most working in small to medium-sized organizations (0-50 and 251-1000 employees). This reflects a significant portion of developers employed in smaller companies, though a notable share also works in larger firms. |
+| **Salary Distribution**               | Developer salary distribution centers around $150,000, with a notable peak at this value. This suggests common compensation benchmarks or responses clustered around high-demand roles, likely influenced by market expectations. |
+| **Annual State Wage Distribution**    | According to BLS data, most states show an annual wage distribution centered around $100,000. This suggests a predictable mid-range salary across states, indicating standardization in tech compensation relative to local demand and cost of living. |
+| **Average Salary by State**           | The state-wise salary heatmap shows regional differences, with states like California, Washington, and New York having higher average developer salaries, reflecting the tech industry's regional concentration and higher cost-of-living. |
+| **Years of Work Experience**          | Most developers have less than five years of professional experience, with fewer developers in senior experience brackets. This trend reflects the industry's growth and the influx of new developers, suggesting possible career shifts in tech. |
+| **Feature Relationships**             | Pairplot and correlation analysis reveal significant relationships between Years of Coding Experience, Company Size, and Total Compensation. Higher compensation correlates with longer coding experience and larger organizational size, suggesting that both experience and employer size impact salary. |
+| **Outlier Analysis in Total Compensation** | A boxplot of Total Compensation identified 1,032 outliers, mainly in the upper salary range. These outliers, with values significantly above the typical compensation range, may represent high-paying specialized roles or inflated responses. Excluding or analyzing these separately could help improve model accuracy. To address the outliers, further analysis and data modeling filters out Total Compensation values greater than $400,000 USD. |
 
 
 ## Modeling
