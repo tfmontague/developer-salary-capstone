@@ -118,9 +118,6 @@ This project focuses exclusively on developer salary data from 2023 and 2024, li
 
 ## Data Preparation
 
-#### Data Cleaning
-The [2024 Stack Overflow Annual Developer Survey](https://survey.stackoverflow.co/) data was cleaned by handling missing values through removal, deleting outliers, and ensuring consistency in categorical and numerical variables. To clean the [May 2023 State Data - Occupational Employment and Wage Statistics](https://www.bls.gov/oes/tables.htm), unrelated job titles were deleted, and missing values were addressed by inputting mean values.
-
 ### Data Cleaning
 
 The [2024 Stack Overflow Annual Developer Survey](https://survey.stackoverflow.co/) was cleaned using several targeted steps to ensure data consistency and relevance for salary prediction. First, columns that were not central to the project goals, such as `PlatformHaveWorkedWith`, `WebframeHaveWorkedWith`, `EmbeddedHaveWorkedWith`, and `ToolsTechHaveWorkedWith`, were removed to simplify the dataset and focus on key features. To maintain data integrity, records with incomplete responses were dropped, ensuring that each entry used for model training was fully populated. Only entries reporting salary in USD were retained to keep `TotalComp` consistent across observations.
