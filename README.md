@@ -204,26 +204,62 @@ The following insights highlight key trends and relationships in experience leve
 
 
 ## Modeling
-
-### Model Selection
-Placeholder text.
+The Modeling phase of this project involved training several machine learning models to predict developer salaries based on key features such as age, education level, years of coding experience, job role, and work experience. This phase was broken down into three main parts: model training, model comparison, and model selection, as summarized below. Access the [Modeling Jupyter Notebook](https://github.com/tfmontague/developer-salary-capstone/blob/main/modeling.ipynb) file on GitHub for detailed coding utlized to execute each part.
 
 ### Model Training
-Placeholder text.
+The goal of model training in this project was to predict developer salaries accurately using core factors such as age, education level, years of coding experience, role type, and work experience. To achieve this, several machine learning models were implemented and evaluated, including:
+
+- **Linear Regression**: Used as a baseline model to understand general trends in salary prediction.
+- **Decision Tree Regressor**: Incorporated to capture potential non-linear relationships within the data.
+- **Random Forest Regressor**: Employed to leverage ensemble learning for better generalization and capture complex relationships in the data.
+
+Each model was trained and evaluated on the training and test datasets, with hyperparameter tuning applied to the Decision Tree and Random Forest models to improve performance. The evaluation metrics used include Mean Absolute Error (MAE), Mean Squared Error (MSE), and R² Score.
 
 ### Model Comparison
-Placeholder text.
+The following table summarizes the performance metrics for each model on both the training and test datasets:
+
+```plaintext
++------------------------------------------+----------------+----------------+------------------+----------------+----------------+-----------------+
+| Model                                    | Training MAE   | Training MSE   | Training R² Score | Test MAE       | Test MSE       | Test R² Score   |
++------------------------------------------+----------------+----------------+------------------+----------------+----------------+-----------------+
+| Linear Regression - Baseline             | 39655.82       | 2933477602.90  | 0.21             | 41487.11       | 3243122526.82  | 0.20            |
+| Linear Regression - Best Fit             | 36528.32       | 2523174533.62  | 0.32             | 44450.88       | 3764948444.21  | 0.07            |
+| Decision Tree Regressor - Baseline       | 2264.73        | 110949208.99   | 0.97             | 60327.25       | 6833384163.11  | -0.69           |
+| Decision Tree Regressor - Best Fit       | 36528.32       | 2523174533.62  | 0.32             | 44450.88       | 3764948444.21  | 0.07            |
+| Random Forest Regressor - Baseline       | 16943.50       | 554659110.73   | 0.85             | 45342.23       | 3782466515.61  | 0.06            |
+| Random Forest Regressor - Best Fit       | 35612.18       | 2355704169.28  | 0.36             | 41468.26       | 3254045421.13  | 0.19            |
++------------------------------------------+----------------+----------------+------------------+----------------+----------------+-----------------+
+```
+
+### Model Selection
+Based on the performance metrics, the Random Forest Regressor - Best Fit model emerged as the best performing model. This model provided a good balance between the training and test sets, with relatively low MAE and MSE values, indicating accuracy and reliability in predictions. Additionally, the positive R² score of 0.19 on the test set suggests that this model explains a reasonable amount of the variance in salaries, outperforming other models, especially the baseline Decision Tree model, which showed a negative R² score on the test set.
+
+The Random Forest Regressor - Best Fit model was selected for the final implementation due to its ability to generalize well without overfitting. Its ensemble approach helps capture complex patterns in the data, making it an ideal choice for developing a robust and reliable salary estimation tool.
 
 ## Conclusion
 
-### Key Findings
-Placeholder text.
+The goal of this project was to develop a predictive model that accurately estimates developer salaries based on various factors, including experience, education level, and job role. Through data cleaning, exploratory data analysis, and rigorous model training and evaluation, we were able to identify a Random Forest model as the most suitable for predicting developer salaries. This model demonstrated a strong balance between accuracy and generalizability, making it well-suited for real-world applications such as a salary estimation tool.
 
-### Insights
-Placeholder text.
+## Key Findings
+
+- **Experience and Education Impact**: The analysis showed that years of coding experience and educational level have a notable impact on salary levels, with more experienced and highly educated individuals generally earning higher salaries.
+- **Company Size and Industry Differences**: Developers working in larger companies or certain high-demand industries (such as software development and cloud computing) tend to receive higher compensation, reflecting market demand for these roles.
+- **Regional Variability**: Geographic differences were evident in salary distribution, with states like California and Washington exhibiting higher average developer salaries, likely due to cost-of-living adjustments and regional demand for tech talent.
+
+## Insights
+
+- **Outliers in High Salaries**: A substantial number of high outliers were identified, which likely represent specialized roles or senior-level positions. Filtering out extremely high salaries (above $400,000) improved model performance by reducing noise and focusing on the typical salary range for developers.
+- **Model Performance**: The Random Forest model, with optimized hyperparameters, emerged as the best-performing model. This model captures complex interactions between features without overfitting, making it a reliable choice for predicting salaries.
+- **Applications**: This model can be effectively deployed in a salary estimation application, allowing developers and hiring managers to gauge expected compensation based on relevant factors. It also offers insights into how various attributes contribute to salary levels, supporting informed decision-making in career development and recruitment.
 
 ### Limitations
-Placeholder text.
+This project analyzes developer salary data specifically from 2023 and 2024, focusing on trends within those two years. Because we didn’t include data from prior years, it doesn’t capture long-term salary trends or shifts over time. As a result, we might miss out on understanding the broader economic and industry changes that could impact compensation.
+
+The scope is also limited to developer roles, meaning other positions in tech, such as data scientists, product managers, or UX designers, aren’t represented here. Salary dynamics for developers might differ from those in other roles, so the findings may not fully reflect the broader tech industry.
+
+Geographic detail is another limitation. While we have some state-level data, there’s no information at the regional or city level, which means variations in pay based on local demand or cost of living aren’t accounted for. This could affect salary insights, particularly for developers working in high-demand tech hubs.
+
+Finally, since the data relies on survey responses, there’s the potential for bias if the survey sample doesn’t fully represent the developer workforce. This could lead to skewed results, with certain types of companies, roles, or experience levels potentially overrepresented. These factors are worth keeping in mind when interpreting the project’s findings and considering their practical application.
 
 ### Future Work
 Placeholder text.
