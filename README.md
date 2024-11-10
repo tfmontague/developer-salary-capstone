@@ -32,6 +32,36 @@ This project involves developing a machine learning model to predict developer s
 - [Developer Salary Overleaf Project Report](https://www.overleaf.com/read/kvnwjkgcfwkp#49128f)
 - [Developer Salary Shiny App Dashboard](https://shiny.posit.co/py/)
 
+## Instructions for Managing the Project Virtual Environment
+
+We recommend using the following instructions for managing the virtual environment for the Developer Salary Estimator project, including steps for creating, activating, and installing required dependencies.
+
+### 1. Create the Virtual Environment
+
+In the project root directory, run the following command to create a virtual environment named `venv`:
+
+```python
+py -m venv .venv
+```
+This command will create a new directory called venv, which will contain all the necessary files for the virtual environment.
+
+### 2. Activate the Project Virtual Environment
+```python
+.\.venv\Scripts\Activate.ps1
+```
+
+### 3. Install Dependencies
+Install dependencies into your `.venv` and freeze into your requirements.txt
+
+```python
+pip install pandas
+pip install pyarrow
+pip install scipy
+pip install seaborn
+pip install matplotlib
+pip install scikit-learn
+```
+
 ## Project Implementation Process
 
 The project follows a standard data analytics approach with these phases:
