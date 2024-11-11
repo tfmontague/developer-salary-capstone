@@ -1,0 +1,176 @@
+Feature
+Age Range
+EdLevel
+YearsCode
+OrgSize
+WorkExp
+YearsCode_OrgSize
+EdLevel_WorkExp
+RemoteWork_Hybrid
+RemoteWork_In-person
+RemoteWork_Remote
+DevType_Blockchain
+DevType_Cloud infrastructure engineer
+DevType_Data engineer
+DevType_Data or business analyst
+DevType_Data scientist or machine learning specialist
+DevType_Database administrator
+DevType_Designer
+DevType_DevOps specialist
+DevType_Developer Advocate
+DevType_Developer Experience
+"DevType_Developer, AI"
+"DevType_Developer, QA or test"
+"DevType_Developer, back-end"
+"DevType_Developer, desktop or enterprise applications"
+"DevType_Developer, embedded applications or devices"
+"DevType_Developer, front-end"
+"DevType_Developer, full-stack"
+"DevType_Developer, game or graphics"
+"DevType_Developer, mobile"
+DevType_Educator
+"DevType_Engineer, site reliability"
+DevType_Engineering manager
+DevType_Hardware Engineer
+DevType_Marketing or sales professional
+DevType_Other
+DevType_Product manager
+DevType_Project manager
+DevType_Research & Development role
+DevType_Scientist
+DevType_Security professional
+"DevType_Senior Executive (C-Suite, VP, etc.)"
+DevType_Student
+DevType_System administrator
+Country_Albania
+Country_Algeria
+Country_Angola
+Country_Argentina
+Country_Armenia
+Country_Australia
+Country_Austria
+Country_Azerbaijan
+Country_Bangladesh
+Country_Belarus
+Country_Bolivia
+Country_Brazil
+Country_Bulgaria
+Country_Cambodia
+Country_Cameroon
+Country_Canada
+Country_Chile
+Country_China
+Country_Colombia
+"Country_Congo, Republic of the..."
+Country_Costa Rica
+Country_Cuba
+Country_Czech Republic
+Country_Democratic Republic of the Congo
+Country_Denmark
+Country_Dominican Republic
+Country_Ecuador
+Country_Egypt
+Country_El Salvador
+Country_Estonia
+Country_Ethiopia
+Country_France
+Country_Georgia
+Country_Germany
+Country_Ghana
+Country_Greece
+Country_Guatemala
+Country_Guyana
+Country_Haiti
+Country_Honduras
+Country_Hong Kong (S.A.R.)
+Country_Hungary
+Country_Iceland
+Country_India
+Country_Indonesia
+"Country_Iran, Islamic Republic of..."
+Country_Iraq
+Country_Israel
+Country_Italy
+Country_Jamaica
+Country_Japan
+Country_Jordan
+Country_Kazakhstan
+Country_Kenya
+Country_Kyrgyzstan
+Country_Lao People's Democratic Republic
+Country_Lebanon
+Country_Lesotho
+Country_Liechtenstein
+Country_Lithuania
+Country_Malta
+Country_Mauritania
+Country_Mauritius
+Country_Mexico
+Country_Mongolia
+Country_Namibia
+Country_Nepal
+Country_Netherlands
+Country_New Zealand
+Country_Nicaragua
+Country_Nigeria
+Country_Nomadic
+Country_Norway
+Country_Pakistan
+Country_Palestine
+Country_Panama
+Country_Paraguay
+Country_Peru
+Country_Philippines
+Country_Poland
+Country_Portugal
+Country_Republic of Moldova
+Country_Republic of North Macedonia
+Country_Romania
+Country_Russian Federation
+Country_Rwanda
+Country_Serbia
+Country_Singapore
+Country_Slovakia
+Country_Somalia
+Country_South Africa
+Country_South Korea
+Country_Spain
+Country_Sri Lanka
+Country_Suriname
+Country_Sweden
+Country_Switzerland
+Country_Syrian Arab Republic
+Country_Taiwan
+Country_Thailand
+Country_Trinidad and Tobago
+Country_Tunisia
+Country_Turkey
+Country_Turkmenistan
+Country_Uganda
+Country_Ukraine
+Country_United Arab Emirates
+Country_United Kingdom of Great Britain and Northern Ireland
+Country_United Republic of Tanzania
+Country_United States of America
+Country_Uruguay
+Country_Uzbekistan
+"Country_Venezuela, Bolivarian Republic of..."
+Country_Viet Nam
+Country_Yemen
+Country_Zimbabwe
+ICorPM_Individual contributor
+ICorPM_People manager
+Industry_Computer Systems Design and Services
+Industry_Energy
+Industry_Fintech
+Industry_Government
+Industry_Healthcare
+Industry_Higher Education
+Industry_Insurance
+Industry_Internet Telecomm or Information Services
+Industry_Manufacturing
+Industry_Media & Advertising Services
+Industry_Other
+Industry_Retail and Consumer Services
+Industry_Software Development
+Industry_Transportation or Supply Chain

@@ -1,0 +1,8 @@
+flask
+pandas
+scipy
+numpy
+scikit-learn
+setuptools
+shiny
+ipyleaflet
