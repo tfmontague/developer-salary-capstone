@@ -30,7 +30,7 @@ This project involves developing a machine learning model to predict developer s
 
 - [Developer Salary GitHub Repository](https://github.com/tfmontague/developer-salary-capstone)
 - [Developer Salary Overleaf Project Report](https://www.overleaf.com/read/kvnwjkgcfwkp#49128f)
-- [Developer Salary Shiny App Dashboard](https://shiny.posit.co/py/)
+- [Developer Salary Shiny App Dashboard-WIP](https://x9lcn6-topaz-montague.shinyapps.io/developer-salary-app1/)
 
 ## Instructions for Managing the Project Virtual Environment
 
