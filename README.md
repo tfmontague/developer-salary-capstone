@@ -293,7 +293,7 @@ Finally, since the data relies on survey responses, there’s the potential for 
 
 ### Future Work
 ![salary estimator dashboard](images/salaryestimatordash.png)
-[Developer Salary Shiny App Dashboard - WORK IN PROGRERSS](https://x9lcn6-topaz-montague.shinyapps.io/developer-salary-app1/)
+[Developer Salary Shiny App Dashboard - WORK IN PROGRESS](https://x9lcn6-topaz-montague.shinyapps.io/developer-salary-app1/)
 
 This project has begun the development of an interactive estimator dashboard using the best-performing model, the Random Forest Regressor, to predict developer salaries based on user-selected inputs. This initial version of the dashboard allows users to explore salary estimations by inputting demographic and job-related factors and comparing these predictions with state averages from the Bureau of Labor Statistics (BLS).
 
