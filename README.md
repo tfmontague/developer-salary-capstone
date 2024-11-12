@@ -292,7 +292,17 @@ Geographic detail is another limitation. While we have some state-level data, th
 Finally, since the data relies on survey responses, there’s the potential for bias if the survey sample doesn’t fully represent the developer workforce. This could lead to skewed results, with certain types of companies, roles, or experience levels potentially overrepresented. These factors are worth keeping in mind when interpreting the project’s findings and considering their practical application.
 
 ### Future Work
-Placeholder text.
+![salary estimator dashboard](images/salaryestimatordash.png)
+[Developer Salary Shiny App Dashboard - WORK IN PROGRERSS](https://x9lcn6-topaz-montague.shinyapps.io/developer-salary-app1/)
+
+This project has begun the development of an interactive estimator dashboard using the best-performing model, the Random Forest Regressor, to predict developer salaries based on user-selected inputs. This initial version of the dashboard allows users to explore salary estimations by inputting demographic and job-related factors and comparing these predictions with state averages from the Bureau of Labor Statistics (BLS).
+
+However, further improvements are needed to enhance the model's accuracy and reliability. Future work will focus on additional training and optimization of the model to fine-tune prediction accuracy. Hyperparameter tuning and feature engineering will be explored in greater depth to ensure the model captures complex interactions among predictors more effectively.
+
+Moreover, integrating additional developer salary datasets that provide state-level information will be a priority. By incorporating data from sources beyond the Stack Overflow Developer Survey, such as other industry surveys or compensation databases, we can compare and validate the model’s predictions against diverse datasets. This approach will provide a broader and more accurate view of developer compensation across different regions, potentially identifying unique patterns or outliers when compared to the BLS state averages.
+
+In summary, future iterations of the estimator dashboard will aim to improve the robustness of salary predictions and expand the model’s applicability across various data sources, enhancing its value as a reliable tool for developers and hiring managers alike.
+
 
 ## References
 
