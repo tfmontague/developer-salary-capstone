@@ -234,8 +234,7 @@ The following insights highlight key trends and relationships in experience leve
 
 
 ## Modeling
-![predictiveanalysismechanism](images/predictive_analysis_mechanism.png)
-T Montague 2024
+![predictiveanalysismechanism](images/predictive_analysis_mechanism2.png)
 
 The Modeling phase of this project uses a predictive analysis mechanism that involves training several machine learning models to predict developer salaries based on key features such as age, education level, years of coding experience, job role, and work experience. The mechanism includes gathering, preparing, and modeling phases. The modeling phase was broken down into three main parts: model training, model comparison, and model selection, as summarized below. Access the [Modeling Jupyter Notebook](https://github.com/tfmontague/developer-salary-capstone/blob/main/modeling.ipynb) file on GitHub for detailed coding utlized to execute each part.
 
