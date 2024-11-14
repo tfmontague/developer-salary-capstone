@@ -234,7 +234,10 @@ The following insights highlight key trends and relationships in experience leve
 
 
 ## Modeling
-The Modeling phase of this project involved training several machine learning models to predict developer salaries based on key features such as age, education level, years of coding experience, job role, and work experience. This phase was broken down into three main parts: model training, model comparison, and model selection, as summarized below. Access the [Modeling Jupyter Notebook](https://github.com/tfmontague/developer-salary-capstone/blob/main/modeling.ipynb) file on GitHub for detailed coding utlized to execute each part.
+![predictiveanalysismechanism](images/predictive_analysis_mechanism.png)
+T Montague 2024
+
+The Modeling phase of this project uses a predictive analysis mechanism that involves training several machine learning models to predict developer salaries based on key features such as age, education level, years of coding experience, job role, and work experience. The mechanism includes gathering, preparing, and modeling phases. The modeling phase was broken down into three main parts: model training, model comparison, and model selection, as summarized below. Access the [Modeling Jupyter Notebook](https://github.com/tfmontague/developer-salary-capstone/blob/main/modeling.ipynb) file on GitHub for detailed coding utlized to execute each part.
 
 ### Model Training
 The goal of model training in this project was to predict developer salaries accurately using core factors such as age, education level, years of coding experience, role type, and work experience. To achieve this, several machine learning models were implemented and evaluated, including:
@@ -248,18 +251,15 @@ Each model was trained and evaluated on the training and test datasets, with hyp
 ### Model Comparison
 The following table summarizes the performance metrics for each model on both the training and test datasets:
 
-```plaintext
-+------------------------------------------+----------------+----------------+------------------+----------------+----------------+-----------------+
-| Model                                    | Training MAE   | Training MSE   | Training R² Score | Test MAE       | Test MSE       | Test R² Score   |
-+------------------------------------------+----------------+----------------+------------------+----------------+----------------+-----------------+
-| Linear Regression - Baseline             | 39655.82       | 2933477602.90  | 0.21             | 41487.11       | 3243122526.82  | 0.20            |
-| Linear Regression - Best Fit             | 36528.32       | 2523174533.62  | 0.32             | 44450.88       | 3764948444.21  | 0.07            |
-| Decision Tree Regressor - Baseline       | 2264.73        | 110949208.99   | 0.97             | 60327.25       | 6833384163.11  | -0.69           |
-| Decision Tree Regressor - Best Fit       | 36528.32       | 2523174533.62  | 0.32             | 44450.88       | 3764948444.21  | 0.07            |
-| Random Forest Regressor - Baseline       | 16943.50       | 554659110.73   | 0.85             | 45342.23       | 3782466515.61  | 0.06            |
-| Random Forest Regressor - Best Fit       | 35612.18       | 2355704169.28  | 0.36             | 41468.26       | 3254045421.13  | 0.19            |
-+------------------------------------------+----------------+----------------+------------------+----------------+----------------+-----------------+
-```
+| Model                                | Training MAE | Training MSE     | Training R² Score | Test MAE  | Test MSE     | Test R² Score |
+|--------------------------------------|--------------|------------------|-------------------|-----------|--------------|---------------|
+| Linear Regression - Baseline         | 39655.82     | 2933477602.90    | 0.21             | 41487.11  | 3243122526.82 | 0.20          |
+| Linear Regression - Best Fit         | 36528.32     | 2523174533.62    | 0.32             | 44450.88  | 3764948444.21 | 0.07          |
+| Decision Tree Regressor - Baseline   | 2264.73      | 110949208.99     | 0.97             | 60327.25  | 6833384163.11 | -0.69         |
+| Decision Tree Regressor - Best Fit   | 36528.32     | 2523174533.62    | 0.32             | 44450.88  | 3764948444.21 | 0.07          |
+| Random Forest Regressor - Baseline   | 16943.50     | 554659110.73     | 0.85             | 45342.23  | 3782466515.61 | 0.06          |
+| Random Forest Regressor - Best Fit   | 35612.18     | 2355704169.28    | 0.36             | 41468.26  | 3254045421.13 | 0.19          |
+
 
 ### Model Selection
 Based on the performance metrics, the Random Forest Regressor - Best Fit model emerged as the best performing model. This model provided a good balance between the training and test sets, with relatively low MAE and MSE values, indicating accuracy and reliability in predictions. Additionally, the positive R² score of 0.19 on the test set suggests that this model explains a reasonable amount of the variance in salaries, outperforming other models, especially the baseline Decision Tree model, which showed a negative R² score on the test set.
@@ -303,6 +303,7 @@ Moreover, integrating additional developer salary datasets that provide state-le
 
 In summary, future iterations of the estimator dashboard will aim to improve the robustness of salary predictions and expand the model’s applicability across various data sources, enhancing its value as a reliable tool for developers and hiring managers alike.
 
+Explore the [App Section](https://github.com/tfmontague/developer-salary-capstone/tree/main/app) of the Developer Salary GitHub for insights into the work currently in progress to refine, enhance, and improve the app dashboard.
 
 ## References
 
