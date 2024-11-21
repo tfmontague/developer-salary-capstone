@@ -6,7 +6,9 @@ Email: [S572397@nwmissouri.edu](mailto:S572397@nwmissouri.edu), [tmontaguegc@gma
 
 ## Abstract
 
-This project focuses on using machine learning to predict developer salaries based on demographic and job-related factors. By leveraging salary surveys and machine learning techniques, the project aims to uncover the main contributors to salary differences and offer insights that can help address pay disparities in the tech industry.
+This project aimed to develop a predictive model for estimating developer salaries based on demographic and professional attributes, leveraging machine learning to address salary benchmarking needs. The analysis utilized data from the Stack Overflow Developer Survey and Bureau of Labor Statistics to examine factors influencing compensation, such as years of coding experience, organization size, and education level. Several machine learning algorithms were evaluated, including Linear Regression, Decision Tree Regressor, and Random Forest Regressor. The Random Forest model was selected for its ability to capture complex relationships within the data.
+The selected model achieved a Mean Absolute Error (MAE) of $41,468, indicating moderate predictive accuracy but also highlighting the need for further refinement. This error suggests the model provides general insights but requires caution in application for precise predictions. The findings demonstrated that the model explains a meaningful portion of salary variance, with years of coding experience and organizational size emerging as key predictors.
+This work underscored the importance of feature engineering, hyperparameter tuning, and diverse data sources in improving model reliability. While the current implementation offers actionable insights, enhancing its precision and integrating additional datasets would expand its applicability. The project demonstrated the utility of predictive modeling for salary estimation and provided a foundation for advancing machine learning approaches in workforce analytics.
 
 **Keywords**: machine learning, salary prediction, developer compensation, feature engineering, predictive modeling.
 
@@ -267,28 +269,22 @@ The Random Forest Regressor - Best Fit model was selected for the final implemen
 
 ## Conclusion
 
-The goal of this project was to develop a predictive model that accurately estimates developer salaries based on various factors, including experience, education level, and job role. Through data cleaning, exploratory data analysis, and rigorous model training and evaluation, we were able to identify a Random Forest model as the most suitable for predicting developer salaries. This model demonstrated a strong balance between accuracy and generalizability, making it well-suited for real-world applications such as a salary estimation tool.
+The objective of this project was to develop a predictive model capable of estimating developer salaries based on factors such as years of coding experience, education level, job role, and company size. Through extensive data preparation, exploratory data analysis (EDA), and rigorous model training, the Random Forest Regressor emerged as the most reliable model. This model provided a balance between predictive accuracy and the ability to capture complex relationships, making it suitable for real-world applications in a salary estimation dashboard.
 
 ## Key Findings
 
 - **Experience and Education Impact**: The analysis showed that years of coding experience and educational level have a notable impact on salary levels, with more experienced and highly educated individuals generally earning higher salaries.
 - **Company Size and Industry Differences**: Developers working in larger companies or certain high-demand industries (such as software development and cloud computing) tend to receive higher compensation, reflecting market demand for these roles.
-- **Regional Variability**: Geographic differences were evident in salary distribution, with states like California and Washington exhibiting higher average developer salaries, likely due to cost-of-living adjustments and regional demand for tech talent.
+- **Predictive Accuracy and Limitations**: The Random Forest model achieved a Mean Absolute Error (MAE) of $41,468, highlighting moderate predictive accuracy. This deviation suggests that while the model captures meaningful trends, caution is warranted in its practical application for precise predictions.
 
 ## Insights
 
 - **Outliers in High Salaries**: A substantial number of high outliers were identified, which likely represent specialized roles or senior-level positions. Filtering out extremely high salaries (above $400,000) improved model performance by reducing noise and focusing on the typical salary range for developers.
-- **Model Performance**: The Random Forest model, with optimized hyperparameters, emerged as the best-performing model. This model captures complex interactions between features without overfitting, making it a reliable choice for predicting salaries.
-- **Applications**: This model can be effectively deployed in a salary estimation application, allowing developers and hiring managers to gauge expected compensation based on relevant factors. It also offers insights into how various attributes contribute to salary levels, supporting informed decision-making in career development and recruitment.
+- **Feature Interactions**: The Random Forest model effectively captured interactions between features, such as education and years of experience, demonstrating its ability to reflect complex relationships influencing salaries.
+- **Regional Variability**: Analysis of state-level data from the Bureau of Labor Statistics revealed that states like California and Washington exhibited higher average salaries, reflecting the impact of regional demand and cost-of-living adjustments.
 
 ### Limitations
-This project analyzes developer salary data specifically from 2023 and 2024, focusing on trends within those two years. Because we didn’t include data from prior years, it doesn’t capture long-term salary trends or shifts over time. As a result, we might miss out on understanding the broader economic and industry changes that could impact compensation.
-
-The scope is also limited to developer roles, meaning other positions in tech, such as data scientists, product managers, or UX designers, aren’t represented here. Salary dynamics for developers might differ from those in other roles, so the findings may not fully reflect the broader tech industry.
-
-Geographic detail is another limitation. While we have some state-level data, there’s no information at the regional or city level, which means variations in pay based on local demand or cost of living aren’t accounted for. This could affect salary insights, particularly for developers working in high-demand tech hubs.
-
-Finally, since the data relies on survey responses, there’s the potential for bias if the survey sample doesn’t fully represent the developer workforce. This could lead to skewed results, with certain types of companies, roles, or experience levels potentially overrepresented. These factors are worth keeping in mind when interpreting the project’s findings and considering their practical application.
+This project marks the initial development of an interactive salary estimator dashboard, utilizing the Random Forest Regressor to predict developer salaries based on user inputs. While the tool provides actionable insights, further enhancements are necessary to improve accuracy and expand its utility.
 
 ### Future Work
 ![salary estimator dashboard](images/salaryestimatordash.png)
